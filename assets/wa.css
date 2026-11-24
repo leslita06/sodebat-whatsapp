@@ -1,0 +1,58 @@
+/* SODEBAT : réglages propres à la page WhatsApp, par-dessus la charte commune. */
+:root{--acc:#004AAD;--accb:#EAF2FC;--acct:#003A8C;--sky:#38B6FF;--ink:#1E2430;--ink2:#3A3A3B;--sbg:#FBFCFE}
+.brand{padding:2px 8px 4px}
+.brand img{height:34px}
+.bs2{font:500 12px/1.3 var(--sans);color:var(--mut);padding:2px 8px 6px}
+.nav-s .ni span{white-space:normal;line-height:1.3}
+.urg-s{margin:18px 6px 0;background:var(--accb);border:1px solid #CFE0F5;border-radius:10px;padding:10px 12px}
+.urg-s .ul{display:flex;align-items:center;gap:6px;font:500 12px/1.3 var(--sans);color:var(--acct)}
+.urg-s .ul svg.i{width:14px;height:14px}
+.urg-s a{display:block;font:600 16px/1.3 var(--sans);color:var(--acc);margin-top:3px;letter-spacing:-.01em}
+.urg-s .us{font:400 11.5px/1.35 var(--sans);color:var(--mut);margin-top:3px}
+.pill-demo{color:var(--acct);background:var(--accb)}
+.urg-b{display:flex;align-items:flex-start;gap:10px;background:var(--accb);border:1px solid #CFE0F5;border-radius:12px;padding:11px 14px;margin-bottom:22px;font:400 14px/1.45 var(--sans);color:var(--ink2)}
+.urg-b svg.i{color:var(--acc);width:18px;height:18px;margin-top:1px}
+.urg-b b{color:var(--ink);font-weight:600}
+.urg-b a{color:var(--acc);white-space:nowrap}
+.tops{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 0 22px}
+.tp{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;box-shadow:0 1px 2px rgba(17,17,17,.04)}
+.tp:first-child{border-color:#CFE0F5;background:linear-gradient(180deg,#fff 0%,#F5F9FF 100%)}
+.tl{display:flex;align-items:center;gap:7px;font:500 13px/1.3 var(--sans);color:var(--mut)}
+.tl svg.i{width:15px;height:15px;color:var(--mut2)}
+.tv{font:600 32px/1 var(--sans);letter-spacing:-.03em;margin-top:12px;color:var(--ink)}
+.tp:first-child .tv{color:var(--acc)}
+.ts{font:400 12.5px/1.4 var(--sans);color:var(--mut);margin-top:8px}
+.scen{grid-template-columns:repeat(5,minmax(0,1fr))}
+.scen button .t{font-size:13px}
+.side .kl0 svg.i{width:14px;height:14px}
+.btn{display:inline-flex;align-items:center;gap:7px}
+.btn svg.i{width:15px;height:15px}
+.who-l.bot{color:var(--acc)}
+.badge{background:var(--accb);color:var(--acct)}
+.urg-m{display:block;margin-top:6px;padding-top:6px;border-top:1px dashed rgba(0,0,0,.12);font-size:12.5px;color:#475467}
+.urg-m a{color:var(--acc);font-weight:600;white-space:nowrap}
+.doc{display:flex;align-items:center;gap:10px;background:#F2F4F7;border-radius:8px;padding:9px 10px;margin:-2px -4px 2px -5px;min-width:220px}
+.doc .di{flex:none;width:34px;height:40px;border-radius:4px;background:#C8352B;color:#fff;display:grid;place-items:center;font:700 10.5px/1 var(--sans)}
+.doc .dt b{display:block;font-size:13.5px}
+.doc .dt small{display:block;font-size:11.5px;color:#667781}
+.photo{width:210px;border-radius:6px;margin:-2px -4px 2px -5px}
+.phone.dg .sbar,.phone.dg .wa-head{background:#0B2A55}
+.garde{margin-top:28px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;max-width:900px}
+.garde .gt{display:flex;align-items:center;gap:8px;font:600 14.5px/1.3 var(--sans)}
+.garde .gt svg.i{color:var(--acc)}
+.garde ul{margin:10px 0 0 22px;font:400 13.5px/1.55 var(--sans);color:var(--ink2)}
+.garde li{margin-top:4px}
+@media (max-width:1320px){.scen{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:900px){.brand-m{height:24px}}
+@media (max-width:700px){
+  .tops{grid-template-columns:1fr 1fr;gap:8px}
+  .tp:first-child{grid-column:1/-1}
+  .tp{padding:13px 14px}
+  .tv{font-size:26px;margin-top:9px}
+  .scen{grid-template-columns:1fr 1fr}
+  .scen button:last-child{grid-column:1/-1}
+  .urg-b{font-size:13.5px;padding:10px 12px}
+}
+.crumb{min-width:0}
+.crumb b{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media (max-width:560px){.crumb .grp,.crumb .sep{display:none}}
