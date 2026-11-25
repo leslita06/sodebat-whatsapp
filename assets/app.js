@@ -37,8 +37,8 @@ var S=[
   m:[
    {d:"Lundi 23 novembre"},
    {o:1,tm:"10:20",h:VOICE("0:09","L'ascenseur 1 ne marche plus. Un chariot a cogné la porte du rez-de-chaussée, elle est tordue."),s:0},
-   {o:1,tm:"10:20",h:'<img class="photo" src="assets/img/porte-paliere.jpg?v=20261125a" alt="Photo de la porte palière envoyée par la cliente">',s:0},
-   {o:0,tm:"10:20",h:BOT+'Bien reçu, Madame Kouamé.<br>Résidence Les Hibiscus, <strong>ascenseur 1</strong> : porte palière du rez-de-chaussée déformée.<br>Par sécurité, l\'ascenseur reste à l\'arrêt.',s:1,badge:"Réponse en 25 s"},
+   {o:1,tm:"10:20",h:'<img class="photo" src="assets/img/porte-paliere.jpg?v=20261125b" alt="Photo de la porte palière envoyée par la cliente">',s:0},
+   {o:0,tm:"10:20",h:BOT+'Bien reçu, Madame Kouamé.<br>Résidence Les Alamandas, <strong>ascenseur 1</strong> : porte palière du rez-de-chaussée déformée.<br>Par sécurité, l\'ascenseur reste à l\'arrêt.',s:1,badge:"Réponse en 25 s"},
    {o:0,tm:"10:21",h:BOT+'Didier Assi, votre technicien, peut passer :',s:2,btn:["Ce matin, vers 11 h 15","Cet après-midi, avant 16 h","Un autre moment"]},
    {o:1,tm:"10:21",h:'Ce matin, vers 11 h 15',s:2,pick:0},
    {o:0,tm:"10:21",h:BOT+'C\'est noté. Ticket <strong>T-2611-122</strong>.<br>Didier Assi arrive vers 11 h 15.<br>D\'ici là, un panneau « hors service » à l\'entrée suffit.',s:2},
@@ -55,13 +55,13 @@ var S=[
   m:[
    {d:"Aujourd'hui"},
    {o:1,tm:"09:12",h:'Bonjour, nous voulons moderniser les ascenseurs de l\'immeuble. Vous pouvez faire un devis ?',s:0},
-   {o:0,tm:"09:12",h:BOT+'Bonjour Monsieur Diallo.<br>Immeuble Al Baraka, Plateau : 2 ascenseurs Schindler de 1994 suivis par SODEBAT.<br>La visite porte sur :',s:1,badge:"Réponse en 15 s",btn:["Les deux ascenseurs","Ascenseur A","Ascenseur B"]},
+   {o:0,tm:"09:12",h:BOT+'Bonjour Monsieur Diallo.<br>Immeuble Les Acajous, Plateau : 2 ascenseurs Schindler de 1994 suivis par SODEBAT.<br>La visite porte sur :',s:1,badge:"Réponse en 15 s",btn:["Les deux ascenseurs","Ascenseur A","Ascenseur B"]},
    {o:1,tm:"09:13",h:'Les deux ascenseurs',s:1,pick:0},
    {o:0,tm:"09:13",h:BOT+'Votre objectif :',s:1,btn:["Modernisation complète","Mise en conformité","Portes et cabine seulement"]},
    {o:1,tm:"09:13",h:'Modernisation complète',s:2,pick:0},
    {o:0,tm:"09:13",h:BOT+'Créneaux de visite (lun. à ven., 8 h à 17 h) :',s:2,btn:["Jeudi 26 novembre, 10 h","Vendredi 27 novembre, 9 h","Lundi 30 novembre, 15 h","Autre date"]},
    {o:1,tm:"09:14",h:'Vendredi 27 novembre, 9 h',s:2,pick:1},
-   {o:0,tm:"09:14",h:BOT+'Demande enregistrée :<br>Immeuble Al Baraka, 2 ascenseurs, modernisation complète.<br>Visite souhaitée <strong>vendredi 27 novembre, 9 h</strong>, confirmée par l\'équipe commerciale dans la journée.<br>Le devis suit la visite.',s:3},
+   {o:0,tm:"09:14",h:BOT+'Demande enregistrée :<br>Immeuble Les Acajous, 2 ascenseurs, modernisation complète.<br>Visite souhaitée <strong>vendredi 27 novembre, 9 h</strong>, confirmée par l\'équipe commerciale dans la journée.<br>Le devis suit la visite.',s:3},
    {sys:"Demande transmise à l'équipe commerciale"},
    {o:0,tm:"11:30",h:HUM("Serge","chargé d'affaires SODEBAT")+'Bonjour Monsieur Diallo, visite confirmée vendredi 27 à 9 h. Merci de prévoir l\'accès à la machinerie.',s:3}
   ]},
@@ -73,7 +73,7 @@ var S=[
   m:[
    {d:"Aujourd'hui"},
    {o:1,tm:"08:31",h:'Bonjour, vous pouvez me renvoyer le rapport de l\'intervention du début du mois ?',s:0},
-   {o:0,tm:"08:31",h:BOT+'Bonjour Monsieur Yapi.<br>Dernières interventions à l\'Hôtel Lagune Bleue :',s:1,badge:"Réponse en 10 s",btn:["2 novembre, ascenseur 2, cellule de porte","6 juillet, ascenseur 2, cellule de porte","12 mai, ascenseur 2, frein moteur"]},
+   {o:0,tm:"08:31",h:BOT+'Bonjour Monsieur Yapi.<br>Dernières interventions à l\'Hôtel Les Pélicans :',s:1,badge:"Réponse en 10 s",btn:["2 novembre, ascenseur 2, cellule de porte","6 juillet, ascenseur 2, cellule de porte","12 mai, ascenseur 2, frein moteur"]},
    {o:1,tm:"08:32",h:'2 novembre, ascenseur 2, cellule de porte',s:1,pick:0},
    {o:0,tm:"08:32",h:DOC("Rapport T-2611-118","1 page, signé par le technicien"),s:2},
    {o:0,tm:"08:32",h:BOT+'En bref : signalé à 9 h 10, technicien sur place à 9 h 52, remis en service à 10 h 40.<br>Cause : cellule de porte encrassée, nettoyée et réglée.<br>Cette cause est revenue depuis juillet : elle sera vérifiée à la prochaine visite préventive.',s:2,btn:["Envoyer aussi par e-mail","Voir le carnet d'entretien"]},
